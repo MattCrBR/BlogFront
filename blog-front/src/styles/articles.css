@@ -1,0 +1,236 @@
+.articles-page {
+  min-height: calc(100vh - 70px);
+  padding: 40px 0;
+}
+
+.articles-page h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.articles-page > .container > p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.articles-controls {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 40px;
+  align-items: center;
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 16px;
+  background-color: var(--bg-dark-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 14px;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.search-input::placeholder {
+  color: var(--text-secondary);
+}
+
+.controls-right {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.controls-right select {
+  padding: 12px 16px;
+  background-color: var(--bg-dark-light);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.controls-right select:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.view-toggle {
+  display: flex;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.view-toggle button {
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+.view-toggle button:hover {
+  color: var(--primary-color);
+  background-color: var(--bg-dark-light);
+}
+
+.view-toggle button.active {
+  background-color: var(--primary-color);
+  color: #000;
+}
+
+/* Grid: reutiliza estilos do home.css */
+.articles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 24px;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--bg-dark-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+  color: var(--text-primary);
+}
+
+.article-card:hover {
+  border-color: var(--primary-color);
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,188,212,0.1);
+  color: var(--text-primary);
+}
+
+.card-image {
+  position: relative;
+  height: 180px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #ffc0cb, #add8e6);
+}
+
+.category-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: var(--secondary-color);
+  color: #000;
+  padding: 3px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-content {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.card-content p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: var(--text-secondary);
+  padding-top: 12px;
+  border-top: 1px solid var(--border-color);
+}
+
+.articles-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.article-list-item {
+  display: flex;
+  gap: 20px;
+  background-color: var(--bg-dark-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.2s;
+  color: var(--text-primary);
+}
+
+.article-list-item:hover {
+  border-color: var(--primary-color);
+  box-shadow: 0 4px 12px rgba(0,188,212,0.1);
+  color: var(--text-primary);
+}
+
+.list-image {
+  width: 200px;
+  height: 150px;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+.list-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.list-content {
+  padding: 20px 20px 20px 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-content h3 {
+  font-size: 18px;
+  margin: 8px 0;
+  line-height: 1.4;
+}
+
+.list-content p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  line-height: 1.5;
+  flex: 1;
+  margin-bottom: 12px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
