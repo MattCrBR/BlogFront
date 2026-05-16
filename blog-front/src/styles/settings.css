@@ -1,0 +1,136 @@
+.settings {
+  min-height: calc(100vh - 70px);
+  padding: 40px 0;
+}
+
+.settings h1 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+
+.settings > .container > p {
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+.settings-box {
+  background-color: var(--bg-dark-light);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 30px;
+  max-width: 600px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: var(--text-secondary);
+}
+
+.form-group textarea {
+  resize: vertical;
+}
+
+.form-group small {
+  display: block;
+  margin-top: 6px;
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+/* Account */
+.account-info {
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+.account-info h3 {
+  font-size: 15px;
+  margin-bottom: 16px;
+  color: var(--text-secondary);
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.info-row span {
+  color: var(--text-secondary);
+}
+
+.info-row strong {
+  color: var(--text-primary);
+}
+
+/* Messages */
+.success-message {
+  background-color: rgba(76, 175, 80, 0.1);
+  border-left: 4px solid #4caf50;
+  color: #81c784;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.error-message {
+  background-color: rgba(244, 67, 54, 0.1);
+  border-left: 4px solid var(--danger-color);
+  color: #ff6b6b;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Logout */
+.btn-logout {
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px;
+  background-color: transparent;
+  border: 1px solid var(--danger-color);
+  color: var(--danger-color);
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-logout:hover {
+  background-color: rgba(244, 67, 54, 0.1);
+}
