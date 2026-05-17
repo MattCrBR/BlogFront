@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
 import { AuthProvider, useAuth } from './context/AuthContext'
 import { Navbar } from './components/Navbar'
+import { Footer } from './components/Footer'
 import { Home } from './pages/Home'
 import { Articles } from './pages/Articles'
 import { ArticleDetail } from './pages/ArticleDetail'
@@ -36,6 +37,7 @@ function AppContent() {
         <Route path="/configuracoes" element={<ProtectedRoute><Settings /></ProtectedRoute>} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
+      <Footer />
     </>
   )
 }
