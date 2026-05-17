@@ -8,6 +8,7 @@ import { Dashboard } from './pages/Dashboard'
 import { Settings } from './pages/Settings'
 import { Login } from './pages/Login'
 import { Register } from './pages/Register'
+import { ArticleForm } from './pages/ArticleForm'
 import './index.css'
 
 function ProtectedRoute({ children }: { children: React.ReactNode }) {
@@ -27,6 +28,8 @@ function AppContent() {
         <Route path="/" element={<Home />} />
         <Route path="/artigos" element={<Articles />} />
         <Route path="/artigos/:id" element={<ArticleDetail />} />
+        <Route path="/artigos/novo" element={<ProtectedRoute><ArticleForm /></ProtectedRoute>} />
+        <Route path="/artigos/:id/editar" element={<ProtectedRoute><ArticleForm /></ProtectedRoute>} />
         <Route path="/entrar" element={<Login />} />
         <Route path="/cadastro" element={<Register />} />
         <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
